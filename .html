@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Bus Monitoring System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🚌 Smart Bus Monitoring System</h1>
+        <p>Real-Time Passenger & Seat Monitoring</p>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>👥 Passenger Count</h2>
+            <div id="peopleCount" class="big-number">0</div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Crowd Status</h2>
+            <div id="crowdStatus" class="status">
+                Loading...
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>💺 Seat Occupancy</h2>
+
+            <div class="bus-layout">
+
+                <div id="seat1" class="seat">
+                    1
+                </div>
+
+                <div class="seat">2</div>
+
+                <div class="seat">3</div>
+
+                <div class="seat">4</div>
+
+                <div class="seat">5</div>
+
+                <div class="seat">6</div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Smart Transportation Project 🚍
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
